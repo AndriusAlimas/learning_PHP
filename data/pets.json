@@ -29,5 +29,45 @@
         "bio": "Treats and Snoozin!",
         "image": "pancake.png",
         "breed": "Bulldog"
+    },
+    {
+        "name": "Wags",
+        "breed": "Cute Puppy",
+        "weight": "",
+        "bio": "",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": null,
+        "breed": null,
+        "weight": null,
+        "bio": null,
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Heloo",
+        "breed": "dds",
+        "weight": "354",
+        "bio": "sdfs",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "New Pet",
+        "breed": "New breed ",
+        "weight": "16",
+        "bio": "New",
+        "age": "",
+        "image": ""
+    },
+    {
+        "name": "Wagsw",
+        "breed": "wwdas",
+        "weight": "7687",
+        "bio": "dfgdh",
+        "age": "",
+        "image": ""
     }
 ]

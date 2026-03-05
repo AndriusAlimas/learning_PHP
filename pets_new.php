@@ -1,4 +1,32 @@
 <?php require('layout/header.php');?>
+<?php require('lib/functions.php');?>
+
+<?php 
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+    $name = $_POST['name'] ?? '';
+    $breed = $_POST['breed'] ?? '';
+    $weight = $_POST['weight'] ?? '';
+    $bio = $_POST['bio'] ?? '';
+    
+
+    $pets = get_pets();
+    $newPet = array(
+        'name'=> $name,
+        'breed' => $breed,
+        'weight' => $weight,
+        'bio' => $bio,
+        'age' => '',
+        'image' => '',
+    );
+
+    $pets[] = $newPet;
+
+    save_pets($pets);
+
+    header('Location: /');
+    }
+   
+?>
 <div class="container">
     <div class="row">
         <div class="col-xs-6">
@@ -15,7 +43,7 @@
                 </div>
                 
                 <div class="form-group">
-                    <label for="pet-weight" class="control-label">Weight (lbs)</label>
+                    <label for="pet-weight" class="control-label">weight (lbs)</label>
                     <input type="number" name="weight" id="pet-weight" class="form-control" />
                 </div>
                 
